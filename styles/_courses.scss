@@ -1,0 +1,66 @@
+.courses {
+  background: rgb(163, 255, 255);
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .course-card {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    height: 420px;
+    width: 300px;
+    transition: 0.3s ease;
+    &.card-3 {
+      transform: scale(1.07);
+      &:hover {
+        transform: scale(1.13);
+      }
+    }
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    .header-card {
+      background: rgb(65, 232, 250);
+      height: 150px;
+      flex-direction: column;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      align-items: center;
+    }
+    button {
+      padding: 15px;
+      width: 100%;
+      border-radius: 30px;
+      background: cyan;
+      border: 2px solid cyan;
+      outline: none;
+      text-align: center;
+      font-size: 20px;
+      &:hover {
+        background: none;
+        color: cyan;
+      }
+    }
+  }
+  .content-card {
+    padding: 45px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .parent-6 {
+    display: flex;
+    justify-content: center;
+  }
+  .courses {
+    flex-direction: column;
+    width: 100%;
+    .course-card {
+      margin-top: 20px;
+    }
+  }
+}

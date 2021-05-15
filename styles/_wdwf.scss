@@ -1,0 +1,30 @@
+.what-do-we-offfer {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: rgb(156, 255, 255);
+  h2 {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .section-wdwf {
+    width: 100vh;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgb(96, 213, 255);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section-wdwf {
+    width: 110% !important;
+  }
+  .parent-wdwf {
+    display: flex;
+    justify-content: center;
+  }
+}

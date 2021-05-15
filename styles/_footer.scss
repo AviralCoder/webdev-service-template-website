@@ -1,0 +1,46 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  background: rgb(4, 199, 225);
+  padding-top: 40px;
+  padding-bottom: 50px;
+  h1 {
+    font-size: 30px;
+  }
+  .links-footer {
+    display: flex;
+    flex-direction: column;
+    a {
+      color: gray;
+      transition: 0.3s ease;
+      text-decoration: none;
+      font-size: 18px;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-top: 15px;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    flex-direction: column;
+  }
+  .column {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  footer input,
+  footer button {
+    width: 90% !important;
+  }
+}

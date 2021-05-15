@@ -1,0 +1,33 @@
+.contact-us {
+  padding: 40px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  h1 {
+    text-align: center;
+  }
+  input {
+    width: 500px;
+  }
+  .align-center {
+    border-radius: 15px;
+    padding: 50px;
+    background: rgb(61, 218, 245);
+  }
+  button {
+    font-size: 23px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-us {
+    padding: 10px !important;
+  }
+  .align-center {
+    padding: 30px !important;
+  }
+  input {
+    width: 100% !important;
+  }
+}
